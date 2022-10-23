@@ -54,10 +54,13 @@
 .double-row {
   display: grid;
   grid-template-columns: auto 50%;
-  grid-gap: 20px clamp(20px, 10.484vw, 130px);
+  grid-gap: 20px clamp(20px, 9.028vw, 130px);
 
   &--first {
     margin-top: Min(9.677vw, 120px);
+    @include mobile {
+      grid-gap: 40px;
+    }
   }
 
   &--second {
@@ -79,13 +82,17 @@
 
   p {
     max-width: 476px;
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   &__absolute {
     position: absolute;
 
     &--third {
-      width: Min(43.952vw, 545px);
+      width: Min(37.847vw, 545px);
       height: auto;
       left: 50%;
       transform: translateX(-50%);
@@ -97,7 +104,7 @@
     }
 
     &--first {
-      width: Min(47.984vw, 595px);
+      width: Min(41.319vw, 595px);
       height: auto;
       left: 50%;
       transform: translateX(-50%);
@@ -109,7 +116,7 @@
     }
 
     &--second {
-      width: Min(47.984vw, 595px);
+      width: Min(41.319vw, 595px);
       height: auto;
       right: 0;
       top: 0;

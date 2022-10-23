@@ -3,7 +3,8 @@
 
 
   --content-width: 1240px;
-  --container-offset: clamp(10px, 3.472vw, 20px);
+  --container-offset: 50px;
+  // --container-offset: clamp(10px, 3.472vw, 20px);
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   --font-family: "Gazer Sans", sans-serif; // var(--font-family);
